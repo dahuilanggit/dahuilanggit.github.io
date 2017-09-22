@@ -1,0 +1,530 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
+<meta charset="UTF-8">
+<title>多说评论</title>
+<link rel="stylesheet" href="statics/style.css">
+</head>
+<body>
+<div class="comments"> <a name="comments"></a>
+  <div class="ds-thread">
+    <div id="ds-thread">
+      <div id="ds-reset">
+        <ds-toolbar>
+          <div class="ds-toolbar">
+            <ds-login-buttons>
+              <div class="ds-login-buttons">
+                <p>社交帐号登录：</p>
+                <div class="ds-social-links">
+                  <ul class="ds-service-list">
+                    <ds-services>
+                      <li><a rel="nofollow" href="javascript:void(0);" class="ds-service-link ds-weibo"> 微博 </a></li>
+                      <li><a rel="nofollow" href="javascript:void(0);" class="ds-service-link ds-qq"> QQ </a></li>
+                      <li><a rel="nofollow" href="javascript:void(0);" class="ds-service-link ds-renren"> 人人 </a></li>
+                      <li><a rel="nofollow" href="javascript:void(0);" class="ds-service-link ds-douban"> 豆瓣 </a></li>
+                    </ds-services>
+                    <li><a class="ds-more-services" href="javascript:void(0)">更多 »</a></li>
+                  </ul>                  
+                </div>
+              </div>
+            </ds-login-buttons>
+          </div>
+        </ds-toolbar>
+        <ds-reply-box>
+          <div id="dsReplyBoxBlock" class="ds-replybox ">
+            <ds-avatar-visitor><a class="ds-avatar" onclick="return false" target="_self" title="" href="javascript:void(0);">
+              <ds-avatar-image size=""><img src="statics/81666.jpg" alt=""></ds-avatar-image>
+              </a></ds-avatar-visitor>
+            <form id="dsReplyForm" method="post">
+              <div class="ds-textarea-wrapper ds-rounded-top">
+                <textarea name="message" id="dsMessageTextarea" title="Ctrl + Enter 快捷提交" placeholder="请输入您的评论内容!"></textarea>
+                <pre class="ds-hidden-text"></pre>
+              </div>
+              <div class="ds-post-toolbar">
+                <div class="ds-post-options ds-gradient-bg"></div>
+                <button name="submit" type="submit" class="ds-post-button " onclick="comment();"> 发布 </button>
+                <div class="ds-toolbar-buttons"><a class="ds-toolbar-button ds-add-emote" title="插入表情"></a><a class="ds-toolbar-button ds-add-image" title="插入图片"></a></div>
+              </div>
+            </form>
+          </div>
+        </ds-reply-box>
+        <ds-comments normal="true">
+          <ds-comments-tab>
+            <div class="ds-comments-info">
+              <div class="ds-sort"><a data-v="desc" data-type="order" class="ds-order-desc ds-current">最新</a><a data-v="asc" data-type="order" class="ds-order-asc ">最早</a><a data-v="hot" data-type="order" class="ds-order-hot ">最热</a></div>
+              <ul class="ds-comments-tabs" id="dsCommentsTabs">
+                <li class="ds-tab"><a href="javascript:void(0);" data-type="source" data-v="duoshuo" class="ds-comments-tab-duoshuo ds-current"><span class="ds-highlight">2741</span> 条评论</a></li>
+                <li class="ds-tab"><a href="javascript:void(0);" data-type="source" data-v="qqt" class="ds-comments-tab-qqt "><span class="ds-highlight">3</span> 条腾讯微博</a></li>
+              </ul>
+            </div>
+          </ds-comments-tab>
+          <ul class="ds-comments">
+          
+            <!-- 一条评论 -->
+            <ds-comment normal="true" style="display:none;" id="myComment">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">匿名</a></div>
+                    <p>
+                      <ds-comment-message-raw id="myCommentContent"></ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">1分钟前</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <!-- 一条评论 -->
+            
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">西瓜说他很爱夏天</a></div>
+                    <p>
+                      <ds-comment-message-raw>收获很大哦，胸部大了整整一圈呢，以前撑不起来的衣服现在穿着好看多了，外扩的状况也改善了很多，胸型变得好看多了哟。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">梦甜馨</a></div>
+                    <p>
+                      <ds-comment-message-raw>坚持使用一段时间了，确实有效果的呢，现在我胸部变得饱满圆润了哟，胸部的皮肤也较之前好多了，摸起来很光滑呢，嘻嘻。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">我爱洗澡</a></div>
+                    <p>
+                      <ds-comment-message-raw>我就是产后有些缩水了，胸部下垂干瘪，使用了这个产品以后胸部坚挺了很多，我不需要能大多少，就是能恢复到产前就可以了。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">我是小猪猪</a></div>
+                    <p>
+                      <ds-comment-message-raw>胸小的女人心里苦啊，我跟男朋友恋爱接近两年了，现在男朋友碰都不想碰我，有次看见他和别的女人暧昧，然后我马上跟他吵架，结果他说了一句，你的胸太平了，一点女人味都没有，这话真的很伤心。1月份的时候我在网上搜索看看，不经意的看到很多姐妹说百草轩丰胸茶丰胸效果不错，然后我咨询了解了下，然后终于下定决心购买试试，没有想到使用两个疗程我胸部明显增大不少，现在还在坚持使用，希望我也可以成为大胸妹，远离胸小的烦恼。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">兜兜冇餹</a></div>
+                    <p>
+                      <ds-comment-message-raw>姐妹你说的太对了，我之前的前男友也是这个德行，看见胸大的都走不动路了，还经常问我，你说哪些胸大的是不是都有下垂，你哪个闺蜜胸挺大的，不戴胸罩的时候挺拔吗，刚刚开始以为他就随口说说，但是后面越来越嫌弃我了，我也是因为这件事以后决定要丰胸。我是朋友介绍我购买这个产品的，她使用效果不错，我现在使用一个月多点了，效果也不错，现在整个人都自信了。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">决定忘记你</a></div>
+                    <p>
+                      <ds-comment-message-raw>效果很好很明显。才用了一个月多点周围就大了一点了，而且也没有之前哪么松弛，下垂了，坚持使用，希望夏天的时候也能够回头率满满。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">淡忘</a></div>
+                    <p>
+                      <ds-comment-message-raw>购买了四个周期，到现在已经使用了一个周期了，效果真心是不错的。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">终于让自己属于我自己</a></div>
+                    <p>
+                      <ds-comment-message-raw>她好像用了两个月吧，胸部整整变大一个罩杯，太神奇了，所以我也买来用了，希望效果跟朋友一样的好。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>          
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">打断一切不回忆</a></div>
+                    <p>
+                      <ds-comment-message-raw>先天性发育不好也是尴尬的，为了丰胸，没少折腾，更没少花钱买丰胸产品，这次终于功夫不负有心人，有效果喽。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>   
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">为了孩子他娘奋斗</a></div>
+                    <p>
+                      <ds-comment-message-raw>有效果的，自己亲自使用了才来说的，我可不是骗子，用了就是用了，开始用确实没感觉，用了十天吧，效果就出来了，真的很好，挺管用的，现在还在坚持使用呢，变大三厘米了</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>   
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">唯一的爱</a></div>
+                    <p>
+                      <ds-comment-message-raw>刚买还没收到货，看别人都评价用的这么好，我也希望能上来反馈达到理想的效果，俩月后见分晓</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>   
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">深情从来都是被辜负</a></div>
+                    <p>
+                      <ds-comment-message-raw>前后用了两个多月了，从生完孩子后胸部就下垂的厉害，而且非常松软。去过很多次美容院了，可都没多大作用。没想到这个会给我带来这么大的惊喜，才两个多月，胸部就变挺了不少，也变大了不少，穿上内衣也有型啦，真的很激动。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>   
+            <ds-comment normal="true">
+              <li class="ds-post" id="ds-post-6418822365181903618">
+                <div class="ds-post-self">
+                  <ds-avatar icon="duoshuo">
+                    <div class="ds-avatar"><a rel="nofollow author" target="_blank" href="javascript:void(0);">
+                      <ds-avatar-image size=""><img src="statics/user.png"></ds-avatar-image>
+                      </a>
+                      <ds-service-icon service="duoshuo"></ds-service-icon>
+                    </div>
+                  </ds-avatar>
+                  <div class="ds-comment-body">
+                    <div class="ds-comment-header"><a class="ds-user-name ds-highlight" rel="nofollow">回忆只能回忆不能回去</a></div>
+                    <p>
+                      <ds-comment-message-raw>现在胸部正在慢慢增大中，可不能断了，成功就在眼前。几盒下来胸部已经大了一个罩杯多了坚持用效果越来越好了太开心了，没想到百草轩丰胸茶有这么好的效果，得坚持再用几盒了达到自己满意为止。</ds-comment-message-raw>
+                    </p>
+                    <div class="ds-comment-footer ds-comment-actions "><span>
+                      <ds-comment-time-text time="2017-05-11T18:29:02+08:00"><span class="ds-time">8月20日</span></ds-comment-time-text>
+                      </span>
+                      <ds-reply-comment normal="true"><a href="javascript:void(0);" class="ds-post-reply"><span class="ds-icon ds-icon-reply"></span>回复 </a></ds-reply-comment>
+                      <ds-like-comment likes="0"><a class="ds-post-likes" href="javascript:void(0);"><span class="ds-icon ds-icon-like"></span> 点亮 </a></ds-like-comment>
+                      <ds-repost-comment><a class="ds-post-repost" href="javascript:void(0);"><span class="ds-icon ds-icon-share"></span>转发 </a></ds-repost-comment>
+                      <ds-report-comment><a class="ds-post-report" href="javascript:void(0);"><span class="ds-icon ds-icon-report"></span>举报 </a></ds-report-comment>
+                      <ds-delete-comment></ds-delete-comment>
+                    </div>
+                    <div id="dsInlineReplybox"></div>
+                  </div>
+                </div>
+              </li>
+            </ds-comment>   
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </ul>
+          <ds-paginator name="dsPager">
+            <div class="ds-paginator">
+              <div class="ds-border"></div>
+              <a href="index.html" data-page="1" class="">1</a></span><span class="page-break">...</span><span><a href="index3.html" data-page="3" class="">3</a><a href="index4.html" data-page="4" class="">4</a><a href="index5.html" data-page="5" class="ds-current">5</a><a href="index6.html" data-page="6" class="">6</a></span><span class="page-break">...</span><a href="index12.html" data-page="138" class="">138</a></div>
+          </ds-paginator>
+        </ds-comments>
+        <ds-powered-by>
+          <p class="ds-powered-by"><a href="javascript:void(0);" rel="nofollow"> 正品官方网站认证 </a></p>
+        </ds-powered-by>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+function comment(){
+	var commentBox = document.getElementById("dsMessageTextarea");
+	if (commentBox.value == "") {
+		alert("评论内容不能为空！");
+		return false;
+	}
+	var content = localStorage.getItem("content");
+	if (content) {
+		alert("评论过于频繁，请稍后重试！");
+		return false;
+	}
+	localStorage.setItem("content", commentBox.value);
+	init();
+	alert("评论成功！");
+}
+function init(){
+	var content = localStorage.getItem("content");
+	if (content){
+		document.getElementById('myCommentContent').innerHTML = content;
+		document.getElementById('myComment').style.display = 'block';
+	}
+}
+init();
+</script>
+</body>
+</html>

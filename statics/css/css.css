@@ -1,0 +1,47 @@
+body{
+	margin:0px;
+	padding:0px;	
+}
+
+#solid{ width:1920px; overflow:hidden; position:relative; left:50%; margin-left:-960px;
+	height:680px;
+	clear:both;
+}
+#solid .solid0,#solid .solid1,#solid .solid2{
+	width:100%;overflow:hidden; margin:0 auto;
+	position:absolute;
+	display:none;
+}
+
+#solid ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;	
+}
+#solid ul li{
+	position:absolute;
+	height:680px;
+	display:none;
+	
+}
+#solid #btt{
+	
+	position:relative;
+	
+}
+#solid #btt span{
+	position:absolute;
+	top:620px;
+	left:45%;
+	display:block;
+	width:30px;
+	height:8px;
+	margin:0 15px;	
+	text-align:center;
+	background:#3d3d3d;
+	z-index:1000;
+	cursor:pointer;
+	filter:alpha(opacity=70); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.7; /*Firefox私有，透明度50%*/
+	opacity:0.7;/*其他，透明度50%*
+}
